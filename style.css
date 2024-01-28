@@ -1,5 +1,29 @@
+@font-face {
+    font-family: "Cyberpunk-Regular";
+    font-style: normal;
+    font-weight: 400;
+    src: local("Cyberpunk-Regular"),
+         url("/fonts/Cyberpunk-Regular.woff2") format("woff2"),
+         url("/fonts/Cyberpunk-Regular.woff") format("woff");
+}
 
+@font-face {
+    font-family: "Refinery-25";
+    font-style: normal;
+    font-weight: 400;
+    src: local("Refinery-25"),
+         url("/fonts/Refinery 25 Regular.woff2") format("woff2"),
+         url("/fonts/Refinery 25 Regular.woff") format("woff");
+}
 
+@font-face {
+    font-family: "Blender-Pro-Bold";
+    font-style: bold;
+    font-weight: 400;
+    src: local("Blender-Pro-Bold"),
+         url("/fonts/Blender-Pro-Bold.woff2") format("woff2"),
+         url("/fonts/Blender-Pro-Bold.woff") format("woff");
+}
 
 body {
     margin: 0;
@@ -8,7 +32,7 @@ body {
     overflow: hidden;
     background-color: #131313;
     color: yellow;
-    font-family: "Cyberpunk-Regular", sans-serif;
+    font-family: 'Blender-Pro-Bold', sans-serif;
     font-size: 20px;
 }
 
@@ -33,6 +57,7 @@ img {
 
 h1 {
     font-size: 100px;
+    font-family: "Cyberpunk-Regular", sans-serif;
 }
 
 .headings {
