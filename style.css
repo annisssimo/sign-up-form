@@ -8,21 +8,28 @@
 }
 
 @font-face {
-    font-family: "Refinery-25";
+    font-family: "Blender-Pro-Book";
     font-style: normal;
     font-weight: 400;
-    src: local("Refinery-25"),
-         url("/fonts/Refinery 25 Regular.woff2") format("woff2"),
-         url("/fonts/Refinery 25 Regular.woff") format("woff");
+    src: local("Blender-Pro-Book"),
+         url("/fonts/Blender-Pro-Book.woff2") format("woff2"),
+         url("/fonts/Blender-Pro-Book.woff") format("woff");
 }
 
 @font-face {
     font-family: "Blender-Pro-Bold";
-    font-style: bold;
+    font-style: normal;
     font-weight: 400;
     src: local("Blender-Pro-Bold"),
          url("/fonts/Blender-Pro-Bold.woff2") format("woff2"),
          url("/fonts/Blender-Pro-Bold.woff") format("woff");
+}
+
+:root {
+    --yellow: rgb(255, 255, 0);
+    --red: rgb(255, 0, 0);
+    --black: rgb(21, 20, 20);
+    font-size: 80%;
 }
 
 body {
@@ -30,18 +37,18 @@ body {
     padding: 0;
     display: flex;
     overflow: hidden;
-    background-color: #131313;
-    color: yellow;
-    font-family: 'Blender-Pro-Bold', sans-serif;
-    font-size: 20px;
+    background-color: var(--black);
+    color: var(--yellow);
+    font-family: 'Blender-Pro-Book', sans-serif;
+    font-size: 1.7rem;
 }
 
 .main {
     display: flex;
-    border: 3px solid green;
+    /* border: 3px solid green; */
 }
 
-img {
+img[src="./img/back.jpeg"] {
     height: 100vh;
     width: auto;
 }
@@ -49,17 +56,84 @@ img {
 .form-container {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: start;
     flex-direction: column;
     /* border: 3px solid red; */
-    width: 100vh;
 }
 
 h1 {
     font-size: 100px;
-    font-family: "Cyberpunk-Regular", sans-serif;
+    font-family: 'Cyberpunk-Regular', sans-serif;
+    margin: 2rem;
+    text-align: center;
 }
 
-.headings {
+p {
+    color: rgb(156, 156, 97);
     text-align: center;
+    font-size: 1.3rem;
+    margin-bottom: 3rem;
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.form-row {
+    flex-direction: row;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+  
+.form-row label {
+    margin-bottom: 15px;
+}
+  
+.form-row input {
+    font-family: 'Blender-Pro-Bold';
+    font-size: 100%;
+    background-color: inherit;
+    border: none;
+    border-bottom: 1px solid var(--yellow);
+    padding-left: 10px;
+    margin-left: 7px;
+}
+
+.form-row input:focus,
+.form-row input:valid {
+    background-color: var(--yellow);
+    outline: none;
+}
+
+input:-webkit-autofill {
+  border: none;
+  -webkit-text-fill-color: var(--black);
+  -webkit-box-shadow: 0 0 0px 1000px var(--yellow) inset;
+}
+
+label {
+    display: inline-block;
+    font-family: 'Blender-Pro-Bold', sans-serif;
+    text-align: right;
+    font-size: 100%;
+    width: 150px;
+}
+
+button {
+    padding: 10px 60px;
+    background-color: var(--yellow);
+    font-family: 'Blender-Pro-Bold';
+    font-size: 2.5rem;
+    border: none;
+    box-shadow: 3px 3px rgb(255, 96, 96), 0 1rem;
+}
+
+@media only screen and (max-width: 1000px) {
+    img[src="./img/back.jpeg"] {
+        display: none;
+    }
 }

@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sign up form</title>
+    <title>Cyberpank | Sign up</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="https://www.cyberpunk.net/favicons/favicon-32x32.png">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -19,27 +20,58 @@
             <form action="./index.html" method="get">
                 <div class='form-row'>
                     <label for='first-name'>First Name</label>
-                    <input id='first-name' name='user-first-name' type='text' required/>
+                    <input 
+                        id='first-name' 
+                        name='user-first-name' 
+                        type='text' 
+                        required/>
                 </div>
                 <div class='form-row'>
                     <label for='last-name'>Last Name</label>
-                    <input id='last-name' name='user-last-name' type='text' required/>
+                    <input 
+                        id='last-name' 
+                        name='user-last-name' 
+                        type='text' 
+                        required/>
                 </div>
                 <div class='form-row'>
                     <label for='email'>Email</label>
-                    <input id='email' name='user-email' type='email' required/>
+                    <input 
+                        id='email' 
+                        name='user-email' 
+                        type='email' 
+                        required/>
                 </div>
                 <div class='form-row'>
                     <label for='phone'>Phone Number</label>
-                    <input id='phone' name='user-phone' type='tel' required/>
+                    <input 
+                        id='phone' 
+                        name='user-phone' 
+                        type='tel' 
+                        pattern="[0-9]*" 
+                        required/>
                 </div>
                 <div class='form-row'>
                     <label for='pwd'>Password</label>
-                    <input id='pwd' name='user-password' type='password' required/>
+                    <input 
+                        id='pwd' 
+                        name='user-password' 
+                        type='password' 
+                        minlength="4"
+                        required/>
                 </div>
                 <div class='form-row'>
-                    <label for='phone'>Confirm Password</label>
-                    <input id='phone' name='user-phone' type='password' required/>
+                    <label for='pwd-confirm'>Confirm Password</label>
+                    <input 
+                        id='pwd-confirm' 
+                        type='password' 
+                        minlength="4"
+                        required/>
+                </div>
+                <div class="button">
+                    <button type="submit">
+                        Play
+                    </button>
                 </div>
             </form>
         </div>
