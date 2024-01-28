@@ -1,0 +1,40 @@
+
+
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    overflow: hidden;
+    background-color: #131313;
+    color: yellow;
+    font-family: "Cyberpunk-Regular", sans-serif;
+    font-size: 20px;
+}
+
+.main {
+    display: flex;
+    border: 3px solid green;
+}
+
+img {
+    height: 100vh;
+    width: auto;
+}
+
+.form-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    /* border: 3px solid red; */
+    width: 100vh;
+}
+
+h1 {
+    font-size: 100px;
+}
+
+.headings {
+    text-align: center;
+}
