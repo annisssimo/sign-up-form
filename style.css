@@ -95,6 +95,7 @@ form {
   
 .form-row input {
     font-family: 'Blender-Pro-Bold';
+    color: var(--red);
     font-size: 100%;
     background-color: inherit;
     border: none;
@@ -107,6 +108,7 @@ form {
 .form-row input:valid {
     background-color: var(--yellow);
     outline: none;
+    color: var(--black);
 }
 
 input:-webkit-autofill {
