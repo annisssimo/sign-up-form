@@ -45,7 +45,6 @@ body {
 
 .main {
     display: flex;
-    /* border: 3px solid green; */
 }
 
 img[src="./img/back.jpeg"] {
@@ -58,7 +57,6 @@ img[src="./img/back.jpeg"] {
     align-items: center;
     justify-content: start;
     flex-direction: column;
-    /* border: 3px solid red; */
 }
 
 h1 {
@@ -96,7 +94,6 @@ form {
   
 .form-row input {
     font-family: 'Blender-Pro-Bold';
-    color: var(--red);
     font-size: 100%;
     background-color: inherit;
     border: none;
@@ -105,8 +102,7 @@ form {
     margin-left: 7px;
 }
 
-.form-row input:focus,
-.form-row input:valid {
+.form-row input:focus {
     background-color: var(--yellow);
     outline: none;
     color: var(--black);
@@ -124,10 +120,6 @@ label {
     font-size: 100%;
     width: 150px;
 }
-
-/* .error {
-    color: var(--red);
-} */
 
 .error-message {
     position: absolute;

@@ -57,7 +57,6 @@ form.addEventListener('submit', function(event) {
 
     if(pwdConfirm.value !== pwd.value) {
         event.preventDefault();
-        pwdConfirm.style.color = 'var(--red)';
         pwdConfirmErrMessage.textContent = 'Passwords do not match :(';
     }
 });
@@ -65,36 +64,42 @@ form.addEventListener('submit', function(event) {
 firstName.addEventListener('input', (event) => {
     if(firstName.value != '') {
         firstNameErrMessage.textContent = '';
+        firstName.style.background = 'var(--yellow)';
     }
 });
 
 lastName.addEventListener('input', (event) => {
     if(lastName.value != '') {
         lastNameErrMessage.textContent = '';
+        lastName.style.background = 'var(--yellow)';
     }
 });
 
 email.addEventListener('input', (event) => {
     if(email.value != '') {
         emailErrMessage.textContent = '';
+        email.style.background = 'var(--yellow)';
     }
 });
 
 phone.addEventListener('input', (event) => {
     if(phone.value != '') {
         phoneErrMessage.textContent = '';
+        phone.style.background = 'var(--yellow)';
     }
 });
 
 pwd.addEventListener('input', (event) => {
     if(pwd.value != '') {
         pwdErrMessage.textContent = '';
+        pwd.style.background = 'var(--yellow)';
     }
 });
 
 pwdConfirm.addEventListener('input', (event) => {
     if(pwdConfirm.value != '') {
         pwdConfirmErrMessage.textContent = '';
+        pwdConfirm.style.background = 'var(--yellow)';
     }
 });
 
