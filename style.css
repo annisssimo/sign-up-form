@@ -86,7 +86,8 @@ form {
 .form-row {
     flex-direction: row;
     align-items: flex-start;
-    margin-bottom: 20px;
+    margin-bottom: 24px;
+    box-sizing: border-box;
 }
   
 .form-row label {
@@ -125,9 +126,17 @@ label {
     width: 150px;
 }
 
-.message {
+.error {
     color: var(--red);
-    margin-left: 150px;
+    border-bottom: 3px solid var(--red);
+}
+
+.error-message {
+    position: absolute;
+    margin-top: -10px;
+    color: var(--red);
+    margin-left: 162px;
+    font-size: 76%;
 }
 
 button {

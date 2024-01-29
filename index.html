@@ -16,7 +16,7 @@
         <div class="form-container">
             <div class='headings'>
                 <h1>Cyberpank Game</h1>
-                <p>Want to play my fake game? Fill out this form.</p>
+                <p>Want to play my fake game? Fill out this form. All fields are required</p>
             </div>
             <form action="./index.html" method="get">
                 <div class='form-row'>
@@ -24,24 +24,25 @@
                     <input 
                         id='first-name' 
                         name='user-first-name' 
-                        type='text' 
-                        required/>
+                        type='text'
+                    />
+                    <div class="error-message">&nbsp&nbsp&nbsp&nbsp</div>
                 </div>
                 <div class='form-row'>
                     <label for='last-name'>Last Name</label>
                     <input 
                         id='last-name' 
                         name='user-last-name' 
-                        type='text' 
-                        required/>
+                        type='text'/>
+                    <div class="error-message">&nbsp&nbsp&nbsp&nbsp</div>
                 </div>
                 <div class='form-row'>
                     <label for='email'>Email</label>
                     <input 
                         id='email' 
                         name='user-email' 
-                        type='email' 
-                        required/>
+                        type='email'/>
+                    <div class="error-message">&nbsp&nbsp&nbsp&nbsp</div>
                 </div>
                 <div class='form-row'>
                     <label for='phone' title="Only digits and plus sign should be entered">Phone Number</label>
@@ -49,26 +50,25 @@
                         id='phone' 
                         name='user-phone' 
                         type='tel' 
-                        pattern="\+?[0-9]*" 
-                        required/>
+                        pattern="\+?[0-9]*"/>
+                    <div class="error-message">&nbsp&nbsp&nbsp&nbsp</div>
                 </div>
                 <div class='form-row'>
                     <label for='pwd' title='Length have to be more than 4 symbols'>Password</label>
                     <input 
                         id='pwd' 
-                        name='user-password' 
+                        name='user-password'
                         type='password' 
-                        minlength="4"
-                        required/>
+                        minlength="4"/>
+                    <div class="error-message">&nbsp&nbsp&nbsp&nbsp</div>
                 </div>
                 <div class='form-row'>
-                    <label for='pwd-confirm' title='Reenter the password'>Confirm Password</label>
+                    <label for='pwd-confirm' title='Reenter the password'>Confirm Pwd</label>
                     <input 
                         id='pwd-confirm'
                         type='password' 
-                        minlength="4"
-                        required/>
-                    <div class="message">&nbsp&nbsp&nbsp&nbsp</div>
+                        minlength="4"/>
+                    <div class="error-message">&nbsp&nbsp&nbsp&nbsp</div>
                 </div>
                     <div class="button">
                         <button type="submit" id="playButton">
