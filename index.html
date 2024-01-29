@@ -6,6 +6,7 @@
     <title>Cyberpank | Sign up</title>
     <link rel="icon" type="image/png" sizes="32x32" href="https://www.cyberpunk.net/favicons/favicon-32x32.png">
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
     <div class="main">
@@ -63,18 +64,17 @@
                 <div class='form-row'>
                     <label for='pwd-confirm' title='Reenter the password'>Confirm Password</label>
                     <input 
-                        id='pwd-confirm' 
+                        id='pwd-confirm'
                         type='password' 
                         minlength="4"
                         required/>
+                    <div class="message">&nbsp&nbsp&nbsp&nbsp</div>
                 </div>
-                <br>
-                <div class="message">fhjjdvj</div>
-                <br>
-                <div class="button">
-                    <button type="submit">
-                        Play
-                    </button>
+                    <div class="button">
+                        <button type="submit" id="playButton">
+                            Play
+                        </button>
+                    </div>
                 </div>
             </form>
         </div>

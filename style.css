@@ -125,6 +125,11 @@ label {
     width: 150px;
 }
 
+.message {
+    color: var(--red);
+    margin-left: 150px;
+}
+
 button {
     padding: 10px 60px;
     background-color: var(--yellow);
