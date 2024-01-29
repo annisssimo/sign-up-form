@@ -18,7 +18,7 @@
                 <h1>Cyberpank Game</h1>
                 <p>Want to play my fake game? Fill out this form. All fields are required</p>
             </div>
-            <form action="./index.html" method="get">
+            <form action="./index.html" method="get" novalidate>
                 <div class='form-row'>
                     <label for='first-name'>First Name</label>
                     <input 
@@ -26,7 +26,7 @@
                         name='user-first-name' 
                         type='text'
                     />
-                    <div class="error-message">&nbsp&nbsp&nbsp&nbsp</div>
+                    <div class="error-message"></div>
                 </div>
                 <div class='form-row'>
                     <label for='last-name'>Last Name</label>
@@ -34,7 +34,7 @@
                         id='last-name' 
                         name='user-last-name' 
                         type='text'/>
-                    <div class="error-message">&nbsp&nbsp&nbsp&nbsp</div>
+                    <div class="error-message"></div>
                 </div>
                 <div class='form-row'>
                     <label for='email'>Email</label>
@@ -42,16 +42,15 @@
                         id='email' 
                         name='user-email' 
                         type='email'/>
-                    <div class="error-message">&nbsp&nbsp&nbsp&nbsp</div>
+                    <div class="error-message"></div>
                 </div>
                 <div class='form-row'>
                     <label for='phone' title="Only digits and plus sign should be entered">Phone Number</label>
                     <input 
                         id='phone' 
                         name='user-phone' 
-                        type='tel' 
-                        pattern="\+?[0-9]*"/>
-                    <div class="error-message">&nbsp&nbsp&nbsp&nbsp</div>
+                        type='tel'/>
+                    <div class="error-message"></div>
                 </div>
                 <div class='form-row'>
                     <label for='pwd' title='Length have to be more than 4 symbols'>Password</label>
@@ -60,7 +59,7 @@
                         name='user-password'
                         type='password' 
                         minlength="4"/>
-                    <div class="error-message">&nbsp&nbsp&nbsp&nbsp</div>
+                    <div class="error-message"></div>
                 </div>
                 <div class='form-row'>
                     <label for='pwd-confirm' title='Reenter the password'>Confirm Pwd</label>
@@ -68,7 +67,7 @@
                         id='pwd-confirm'
                         type='password' 
                         minlength="4"/>
-                    <div class="error-message">&nbsp&nbsp&nbsp&nbsp</div>
+                    <div class="error-message"></div>
                 </div>
                     <div class="button">
                         <button type="submit" id="playButton">

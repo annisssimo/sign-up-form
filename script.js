@@ -32,11 +32,17 @@ form.addEventListener('submit', function(event) {
     if(email.value === '') {
         event.preventDefault();
         emailErrMessage.textContent = 'Email name is required';
+    } else if(!email.value.match(/^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/)) {
+        event.preventDefault();
+        emailErrMessage.textContent = 'Enter a valid email. Ex: anya04@gmail.com';
     }
 
     if(phone.value === '') {
         event.preventDefault();
         phoneErrMessage.textContent = 'Phone is required';
+    } else if(!phone.value.match(/^\+?(?:[0-9] ?){6,14}[0-9]$/)) {
+        event.preventDefault();
+        phoneErrMessage.textContent = 'Phone number consists of 6 to 14 digits';
     }
 
     if(pwd.value === '') {

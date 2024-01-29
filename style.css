@@ -113,7 +113,6 @@ form {
 }
 
 input:-webkit-autofill {
-  border: none;
   -webkit-text-fill-color: var(--black);
   -webkit-box-shadow: 0 0 0px 1000px var(--yellow) inset;
 }
@@ -126,10 +125,9 @@ label {
     width: 150px;
 }
 
-.error {
+/* .error {
     color: var(--red);
-    border-bottom: 3px solid var(--red);
-}
+} */
 
 .error-message {
     position: absolute;
